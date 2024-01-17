@@ -9,7 +9,7 @@
       >.
     </p>
     <h3>Installed CLI Plugins</h3>
-    <ul>
+    <ul class="flex flex-row bg-slate-500 gap-2">
       <li>
         <a
           href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel"
@@ -76,7 +76,7 @@
       </li>
     </ul>
     <h3>Essential Links</h3>
-    <ul>
+    <ul class="flex flex-row bg-slate-400 gap-2">
       <li>
         <a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a>
       </li>
@@ -100,7 +100,7 @@
       </li>
     </ul>
     <h3>Ecosystem</h3>
-    <ul>
+    <ul class="flex flex-row bg-slate-300 gap-2">
       <li>
         <a href="https://router.vuejs.org" target="_blank" rel="noopener"
           >vue-router</a
@@ -146,21 +146,3 @@ export default class HelloWorld extends Vue {
   msg!: string;
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-</style>

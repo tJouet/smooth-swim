@@ -1,9 +1,13 @@
 import { createStore } from "vuex";
 
 export default createStore({
-  state: {},
+  state: { PagePlacement: "home" },
   getters: {},
-  mutations: {},
+  mutations: {
+    setNewPagePlacement(state, payload) {
+      state.PagePlacement = payload.page;
+    },
+  },
   actions: {},
   modules: {},
 });

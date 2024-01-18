@@ -2,24 +2,24 @@
 module.exports = {
   purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   content: [],
-  theme: {  
+  theme: {
     extend: {
-      spacing:{
-        '1': '8px',
-        '2': '12px',
-        '3': '16px',
-        '4': '24px',
-        '5': '32px',
-        '6': '48px',
-        '8': '64px',
+      spacing: {
+        1: "8px",
+        2: "12px",
+        3: "16px",
+        4: "24px",
+        5: "32px",
+        6: "48px",
+        8: "64px",
       },
       fontFamily: {
-        'Josefin':["Josefin","Sans-serif"]
+        Josefin: ["Josefin", "Sans-serif"],
       },
       colors: {
         white: "#FFFFFF",
         clearBlue: "#01FFFF",
-        darkBlue: "#111726"
+        darkBlue: "#111726",
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/swimmer-hero.jpeg')",

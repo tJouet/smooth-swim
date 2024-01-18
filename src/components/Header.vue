@@ -1,18 +1,22 @@
 <template>
   <div class="flex py-[40px] justify-between items-center px-8">
     <img class="h-20 w-20" src="../assets/fakelogo.svg" />
-    <ul class="flex flex-row gap-2">
+    <ul class="flex flex-row gap-4">
       <li>
-        <a href="/">Home</a>
+        <button :click="() => modifyPagePlace('home')">Home</button>
       </li>
       <li>
-        <a href="/about" target="_blank" rel="noopener">Programmes</a>
+        <button v-on:click="() => modifyPagePlace('programs')">
+          Our programs
+        </button>
       </li>
       <li>
-        <a href="/about" target="_blank" rel="noopener">Test</a>
+        <button v-on:click="() => modifyPagePlace('aboutUs')">About us</button>
       </li>
       <li>
-        <a href="/about" target="_blank" rel="noopener">More test</a>
+        <button v-on:click="() => modifyPagePlace('swimClinic')">
+          Swim clinic
+        </button>
       </li>
     </ul>
     <button
@@ -26,15 +30,25 @@
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
+import { mapMutations, mapState } from "vuex";
 
 @Options({
   methods: {
-    print: () => {
-      console.log("This is a place holder");
+    ...mapMutations(["setNewPagePlacement"]),
+    modifyPagePlace(place: string) {
+      // Appel de la mutation pour modifier la variable dans le store
+      this.setNewPagePlacement({ page: place });
     },
+    print() {
+      console.log(this?.PagePlacement);
+    },
+  },
+  computed: {
+    ...mapState(["PagePlacement"]),
   },
 })
 export default class Header extends Vue {
   print!: () => void;
+  modifyPagePlace!: () => void;
 }
 </script>

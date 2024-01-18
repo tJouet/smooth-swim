@@ -1,8 +1,6 @@
 <template>
-  <div class="flex flex-col">
-    <Hero title="UNLOCK YOUR SWIMMING POTENTIAL" />
-    <p>SECOND PART</p>
-  </div>
+  <Hero />
+  <div class="relative h-[450px] bg-red-500 w-full"></div>
 </template>
 
 <script lang="ts">

@@ -11,11 +11,13 @@ module.exports = {
         '4': '24px',
         '5': '32px',
         '6': '48px',
+        '8': '64px',
       },
       fontFamily: {
         'Josefin':["Josefin","Sans-serif"]
       },
       colors: {
+        white: "#FFFFFF",
         clearBlue: "#01FFFF",
         darkBlue: "#111726"
       },

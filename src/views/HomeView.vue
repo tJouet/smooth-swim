@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col">
-    <Hero />
+    <Hero title="UNLOCK YOUR SWIMMING POTENTIAL" />
     <p>SECOND PART</p>
   </div>
 </template>

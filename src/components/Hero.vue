@@ -1,6 +1,4 @@
 <template>
-  <!-- This div is to prevent overlapping from other components on the Hero -->
-
   <div
     class="bg-hero-pattern bg-cover bg-center md:h-screen h-[350px] flex flex-col justify-center items-center"
   >
@@ -17,18 +15,7 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
-import Header from "@/components/Header.vue";
+import { Vue } from "vue-class-component";
 
-@Options({
-  components: {
-    Header,
-  },
-  props: {
-    title: String,
-  },
-})
-export default class Hero extends Vue {
-  title!: string;
-}
+export default class Hero extends Vue {}
 </script>

@@ -16,15 +16,11 @@
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
 
-import { Hero, Programs, Header, AboutUs, SwimClinic } from "@/components";
+import * as Components from "@/components";
 
 @Options({
   components: {
-    AboutUs,
-    Hero,
-    Header,
-    Programs,
-    SwimClinic,
+    ...Components,
   },
   methods: {
     jumpTo(destination: string) {

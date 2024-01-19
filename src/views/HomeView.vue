@@ -16,11 +16,7 @@
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
 
-import Hero from "@/components/Hero.vue";
-import Programs from "@/components/Programs.vue";
-import Header from "@/components/Header.vue";
-import AboutUs from "@/components/AboutUs.vue";
-import SwimClinic from "@/components/SwimClinic.vue";
+import { Hero, Programs, Header, AboutUs, SwimClinic } from "@/components";
 
 @Options({
   components: {

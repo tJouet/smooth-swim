@@ -1,5 +1,5 @@
 <template>
-  <div class="md:h-screen h-[350px] bg-clearBlue"></div>
+  <div class="h-[1080px] bg-clearBlue"></div>
 </template>
 
 <script lang="ts">

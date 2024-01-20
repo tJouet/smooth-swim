@@ -2,21 +2,20 @@
   <div
     @mouseover="startAnimation"
     @mouseout="resetAnimation"
-    :class="{ 'box-expanded': isExpanded }"
-    class="bg-white shadow p-4 pb-2 flex flex-col justify-between text-black w-[600px] h-[300px] max-h-[600px]"
+    :class="{ 'box-expanded': isExpanded, 'box-contract': !isExpanded }"
+    class="bg-white shadow p-4 pb-2 flex flex-col justify-between text-black w-[600px] h-[350px]"
   >
     <div class="flex flex-row gap-3">
-      <img src="@/assets/quote.svg" class="w-3 h-3" />
-      <h2
-        :class="{ 'box-expanded': isExpanded }"
-        class="font-bold text-black text-xl pr-6"
-      >
+      <img src="@/assets/quote.svg" class="w-5 h-5 fill-red-600" />
+      <!-- https://www.sebastianlundberg.dk/personlig-traening -->
+      <!--https://www.airnauts.com/  -->
+      <h2 class="text-xl font-bold">
         Paolo’s attention to detail is everything. From the planning of the
         sessions, his eye for identifying tweaks in technique and ability to
         cater for all swimmers is fantastic.
       </h2>
     </div>
-    <div class="flex flex-rox gap-2 items-center">
+    <div class="flex flex-row gap-2 items-center">
       <div class="rounded-full bg-red-400 w-6 h-6"></div>
       <div class="flex flex-col text-xs">
         <p class="">Name of the game</p>
@@ -43,13 +42,20 @@ import { Options, Vue } from "vue-class-component";
     },
   },
 })
-export default class Testimony extends Vue {}
+export default class TestimonyBig extends Vue {
+  isExpanded!: boolean;
+  startAnimation!: () => void;
+  resetAnimation!: () => void;
+}
 </script>
 
 <style scoped>
 .box-expanded {
+  height: 400px;
+  transition: height 0.5s ease-in-out;
+}
+.box-contract {
   height: 350px;
-  -webkit-line-clamp: none;
-  transition: height 0.5s ease-in;
+  transition: height 0.5s ease-in-out;
 }
 </style>

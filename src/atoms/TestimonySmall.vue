@@ -6,7 +6,11 @@
     class="bg-white shadow p-4 pb-2 flex flex-col justify-between text-black w-[600px] h-[200px]"
   >
     <div class="flex flex-row gap-3">
-      <img src="@/assets/quote.svg" class="w-5 h-5 fill-red-600" />
+      <img
+        src="@/assets/quote.svg"
+        class="w-5 h-5"
+        alt="Quotation marks for style"
+      />
       <h2 class="text-xl font-bold">
         Paolo creates a super-friendly squad atmosphere, he is great because he
         gives personalized tips to improve technique for each person in the

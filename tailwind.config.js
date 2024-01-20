@@ -22,7 +22,8 @@ module.exports = {
         darkBlue: "#111726",
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/swimmer-hero.jpeg')",
+        "hero-pattern": "url('/src/assets/swimmer-hero.webp')",
+        "water-image":"url('/src/assets/bgImage.webp')"
       },
     },
   },

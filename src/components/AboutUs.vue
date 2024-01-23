@@ -9,7 +9,7 @@
         About Us
       </p>
 
-      <div class="bg-green-200 w-full"></div>
+      <div class="w-full pl-6"><StaffPresentation /></div>
       <div class="bg-red-200 w-full"></div>
     </div>
   </div>
@@ -18,11 +18,9 @@
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
 import * as Atoms from "@/atoms";
-import Testimonies from "@/atoms/Testimonies.vue";
 
 @Options({
   components: {
-    Testimonies,
     ...Atoms,
   },
 })

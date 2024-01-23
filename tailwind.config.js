@@ -23,7 +23,7 @@ module.exports = {
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/swimmer-hero.webp')",
-        "water-image":"url('/src/assets/bgImage.webp')"
+        "water-image": "url('/src/assets/bgImage.webp')",
       },
     },
   },

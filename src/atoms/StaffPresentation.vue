@@ -24,7 +24,7 @@
         Description of job
       </p>
       <p
-        class="w-[90%] max-h-[85px] truncate whitespace-pre-line line-clamp-3"
+        class="w-[90%] max-h-[65px] truncate whitespace-pre-line line-clamp-3"
         :class="{ 'middle-text-hide': !isExpanded, 'text-display': isExpanded }"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum

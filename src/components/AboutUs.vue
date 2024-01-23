@@ -4,6 +4,7 @@
   >
     <div class="md:h-screen h-[350px] p-10 flex flex-row w-full">
       <p
+        :class="'reflected'"
         class="sticky top-5 text-xl font-semibold self-start mx-5 whitespace-nowrap"
       >
         About Us
@@ -26,6 +27,11 @@ import * as Atoms from "@/atoms";
 })
 export default class AboutUs extends Vue {}
 </script>
+<style>
+.reflected {
+  -webkit-box-reflect: below -10px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+}
+</style>
 
 <!-- https://www.sebastianlundberg.dk/personlig-traening -->
 <!--https://www.airnauts.com/  -->

@@ -3,13 +3,14 @@
     class="bg-water-image bg-cover bg-center flex items-center justify-center h-screen"
   >
     <div class="md:h-screen h-[350px] p-10 flex flex-row w-full">
-      <div class="w-[50%]">
-        <p class="sticky top-20 left-80 text-xl font-semibold pl-10">
-          About Us
-        </p>
-      </div>
+      <p
+        class="sticky top-5 text-xl font-semibold self-start mx-5 whitespace-nowrap"
+      >
+        About Us
+      </p>
 
-      <Testimonies class="-right-80" />
+      <div class="bg-green-200 w-full"></div>
+      <div class="bg-red-200 w-full"></div>
     </div>
   </div>
 </template>

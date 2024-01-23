@@ -20,6 +20,7 @@ module.exports = {
         white: "#FFFFFF",
         clearBlue: "#01FFFF",
         darkBlue: "#111726",
+        transpDarkBlue: "#11172680",
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/swimmer-hero.webp')",

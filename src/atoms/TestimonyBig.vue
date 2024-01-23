@@ -3,7 +3,7 @@
     @mouseover="startAnimation"
     @mouseout="resetAnimation"
     :class="{ 'box-expanded': isExpanded, 'box-contract': !isExpanded }"
-    class="bg-white shadow p-4 pb-2 flex flex-col justify-between text-black w-[600px] h-[350px]"
+    class="bg-white shadow p-4 pb-2 flex flex-col justify-between text-black w-[600px] rounded-2xl h-[350px]"
   >
     <div class="flex flex-row gap-3">
       <img

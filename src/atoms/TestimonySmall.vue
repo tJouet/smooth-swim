@@ -3,7 +3,7 @@
     @mouseover="startAnimation"
     @mouseout="resetAnimation"
     :class="{ 'box-expanded': isExpanded, 'box-contract': !isExpanded }"
-    class="bg-white shadow p-4 pb-2 flex flex-col justify-between text-black w-[600px] h-[200px]"
+    class="bg-white shadow p-4 pb-2 flex flex-col justify-between text-black w-[600px] rounded-2xl h-[200px]"
   >
     <div class="flex flex-row gap-3">
       <img
@@ -54,10 +54,10 @@ export default class TestimonySmall extends Vue {
 <style scoped>
 .box-expanded {
   height: 250px;
-  transition: height 0.5s ease-in;
+  transition: height 0.4s ease-in;
 }
 .box-contract {
   height: 200px;
-  transition: height 0.5s ease-in-out;
+  transition: height 0.4s ease-in-out;
 }
 </style>

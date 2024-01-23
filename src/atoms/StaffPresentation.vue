@@ -2,7 +2,7 @@
   <div
     @mouseover="startAnimation"
     @mouseout="resetAnimation"
-    class="flex flex-row rounded-full p-2 max-h-[590px]"
+    class="flex flex-row rounded-full p-2 max-h-[590px] bg-transpDarkBlue hover:bg-darkBlue"
     :class="{ 'box-expanded': isExpanded, 'box-contracted': !isExpanded }"
   >
     <img
@@ -64,12 +64,10 @@ export default class StaffPresentation extends Vue {
 
 <style>
 .box-expanded {
-  max-width: 100%;
   width: 100%;
   opacity: 1;
   transition: width 0.5s ease-in-out, background-color 0.5s ease-in-out,
     opacity 0.5s ease-in-out;
-  background-color: #111726;
 }
 .box-contracted {
   width: 500px;

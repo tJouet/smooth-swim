@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-row relative w-full">
+  <div class="flex flex-row w-full">
     <TestimonyBig class="absolute -left-60 bottom-0" />
     <TestimonySmall class="z-10 absolute bottom-0" />
   </div>

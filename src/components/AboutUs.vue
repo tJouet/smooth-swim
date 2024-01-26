@@ -18,14 +18,14 @@
         <StaffPresentation />
         <StaffPresentation />
       </div>
-      <div class="z-10 w-full flex flex-col between h-full bg-red-400">
+      <div class="relative z-10 w-full flex flex-col h-full bg-red-400">
         <div class="flex flex-col">
           <h1>THIS IS A TEST DO NOT PANIC</h1>
           <h1>THIS IS A TEST DO NOT PANIC</h1>
           <h1>THIS IS A TEST DO NOT PANIC</h1>
           <h1>THIS IS A TEST DO NOT PANIC</h1>
         </div>
-        <Testimonies />
+        <Testimonies class="absolute bottom-0 right-0" />
       </div>
     </div>
   </div>

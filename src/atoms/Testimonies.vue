@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-row w-full">
-    <TestimonyBig class="absolute -left-60 bottom-0" />
-    <TestimonySmall class="z-10 absolute bottom-0" />
+  <div class="flex flex-row justify-end items-end">
+    <TestimonyBig class="translate-x-[320px]" />
+    <TestimonySmall class="z-10" />
   </div>
 </template>
 <script lang="ts">

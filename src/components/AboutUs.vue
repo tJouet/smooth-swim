@@ -1,8 +1,6 @@
 <template>
-  <div
-    class="bg-water-image bg-cover bg-center flex items-center justify-center h-screen"
-  >
-    <div class="md:h-screen h-[350px] p-10 flex flex-row w-full">
+  <div class="bg-water-image bg-cover bg-center h-screen">
+    <div class="md:h-screen h-[350px] p-10 flex flex-row">
       <p
         :class="'reflected'"
         class="sticky top-5 text-2xl font-semibold self-start mx-5 whitespace-nowrap"
@@ -10,7 +8,7 @@
         About Us
       </p>
 
-      <div class="w-full pl-6 flex flex-col items-start gap-4">
+      <div class="w-full pl-6 flex flex-col items-start gap-4 flex-1">
         <h1 :class="'reflected-title'" class="text-6xl font-bold pb-8 pl-6">
           Our Staff
         </h1>
@@ -18,14 +16,9 @@
         <StaffPresentation />
         <StaffPresentation />
       </div>
-      <div class="relative z-10 w-full flex flex-col h-full bg-red-400">
-        <div class="flex flex-col">
-          <h1>THIS IS A TEST DO NOT PANIC</h1>
-          <h1>THIS IS A TEST DO NOT PANIC</h1>
-          <h1>THIS IS A TEST DO NOT PANIC</h1>
-          <h1>THIS IS A TEST DO NOT PANIC</h1>
-        </div>
-        <Testimonies class="absolute bottom-0 right-0" />
+      <div class="flex flex-col h-full items-center justify-between w-[50%]">
+        <PresentationYvan />
+        <Testimonies class="translate-x-[-110px]" />
       </div>
     </div>
   </div>

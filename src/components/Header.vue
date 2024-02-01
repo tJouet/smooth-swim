@@ -1,6 +1,6 @@
 <template>
   <div class="flex py-[40px] justify-between items-center px-8">
-    <img class="h-20 w-20" src="../assets/fakelogo.svg" />
+    <img class="h-20 w-20" src="../assets/fakelogo.svg" alt="Website's logo" />
     <ul class="flex flex-row gap-4">
       <li>
         <button :click="() => sendPlacement('home')">Home</button>

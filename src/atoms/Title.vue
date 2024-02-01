@@ -1,5 +1,8 @@
 <template>
-  <h1 :class="{ 'reflected-title': isReflected }" class="text-6xl font-bold">
+  <h1
+    :class="{ 'reflected-title': isReflected }"
+    class="md:text-6xl text-4xl md:font-bold font-semibold"
+  >
     {{ title }}
   </h1>
 </template>

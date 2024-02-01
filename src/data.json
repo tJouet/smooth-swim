@@ -1,0 +1,10 @@
+[
+    {
+        "programs":{
+            "id":1,"name":"Squad Training","description":"Our group sessions are fun, motivating and designed to boost your fitness and freestyle to prepare you for any open water race or triathlon event.","url":"@/assets/squadTraining.webp",
+            "id":2,"name":"1 to 1 Coach","description":"It's never too late, no matter your starting point. Our 1 to 1 coaching methodology will help you to take your swimming to the next level.","url":"@/assets/coachTraining.webp",
+            "id":3,"name":"Video Analysis","description":"A powerful way to understand what is holding you back or why your performance have plateaued. A video can make all the difference.","url":"@/assets/videoTraining.webp",
+            "id":4,"name":"Stroke Development","description":"A semi private class (max 4 pers.) that provides unlimited feedback, stroke correction, and customized drills to refine your stroke.","url":"@/assets/strokeTraining.webp"
+        }
+    }
+]

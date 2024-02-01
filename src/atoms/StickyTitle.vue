@@ -1,7 +1,7 @@
 <template>
   <p
     :class="{ reflected: isReflected }"
-    class="sticky top-5 text-2xl font-semibold self-start mx-5 whitespace-nowrap"
+    class="sticky top-5 text-2xl font-semibold self-start mx-5 whitespace-nowrap hidden md:block"
   >
     {{ title }}
   </p>

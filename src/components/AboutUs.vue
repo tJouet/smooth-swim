@@ -1,15 +1,9 @@
 <template>
   <div class="bg-water-image bg-cover bg-center h-screen">
     <div class="md:h-screen h-[350px] p-10 flex flex-row">
-      <p
-        :class="'reflected'"
-        class="sticky top-5 text-2xl font-semibold self-start mx-5 whitespace-nowrap"
-      >
-        About Us
-      </p>
-
+      <StickyTitle isReflected="true" title="About Us" />
       <div class="w-full pl-6 flex flex-col items-start gap-4 flex-1">
-        <Title :title="'Our staff'" :isReflected="true" />
+        <Title :title="'Our staff'" :isReflected="true" class="pb-8 pl-6" />
         <StaffPresentation />
         <StaffPresentation />
         <StaffPresentation />
@@ -35,14 +29,6 @@ import Testimonies from "@/atoms/Testimonies.vue";
 })
 export default class AboutUs extends Vue {}
 </script>
-<style>
-.reflected {
-  -webkit-box-reflect: below -15px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
-}
-.reflected-title {
-  -webkit-box-reflect: below -140px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
-}
-</style>
 
 <!-- https://www.sebastianlundberg.dk/personlig-traening -->
 <!--https://www.airnauts.com/  -->

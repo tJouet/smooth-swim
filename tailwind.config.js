@@ -20,8 +20,8 @@ module.exports = {
         white: "#FFFFFF",
         clearBlue: "#01FFFF",
         darkBlue: "#111726",
-        seaBlue:"#0A1737",
-        transpSeaBlue:"#0A173780",
+        seaBlue: "#0A1737",
+        transpSeaBlue: "#0A173780",
         transpDarkBlue: "#11172680",
       },
       backgroundImage: {

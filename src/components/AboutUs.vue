@@ -9,9 +9,7 @@
       </p>
 
       <div class="w-full pl-6 flex flex-col items-start gap-4 flex-1">
-        <h1 :class="'reflected-title'" class="text-6xl font-bold pb-8 pl-6">
-          Our Staff
-        </h1>
+        <Title :title="'Our staff'" :isReflected="true" />
         <StaffPresentation />
         <StaffPresentation />
         <StaffPresentation />

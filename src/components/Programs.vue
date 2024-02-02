@@ -7,17 +7,38 @@
     <h2 class="text-2xl py-10 font-medium">
       From learning to swim to perfecting your stroke
     </h2>
-    <ProgramDisplay />
+    <ProgramDisplay
+      v-for="program in FakeData"
+      :title="program.label"
+      :description="program.description"
+      :image="program.url"
+      :key="program.id"
+    />
   </div>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
 import * as Atoms from "@/atoms";
+import FakeData from "../data.json";
+
+interface ProgramData {
+  id: number;
+  label: string;
+  description: string;
+  url: string;
+  link: string;
+}
+
 @Options({
   components: {
     ...Atoms,
   },
+  data() {
+    return { FakeData };
+  },
 })
-export default class Programs extends Vue {}
+export default class Programs extends Vue {
+  FakeData!: Array<ProgramData>;
+}
 </script>

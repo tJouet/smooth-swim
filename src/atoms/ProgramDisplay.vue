@@ -8,7 +8,7 @@
     <p class="font-light my-4">
       {{ description }}
     </p>
-    <a href="" class="text-clearBlue">{{ link }}</a>
+    <a :href="link" class="text-clearBlue">Read more</a>
   </div>
 </template>
 

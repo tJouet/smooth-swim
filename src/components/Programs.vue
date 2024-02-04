@@ -37,7 +37,7 @@ interface ProgramData {
     ...Atoms,
   },
   data() {
-    return { FakeData };
+    return { FakeData, isExpanded: false };
   },
 })
 export default class Programs extends Vue {

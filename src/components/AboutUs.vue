@@ -10,7 +10,7 @@
       </div>
       <div class="flex flex-col h-full items-center justify-between w-[50%]">
         <PresentationYvan />
-        <Testimonies class="translate-x-[-110px]" />
+        <Testimonies class="translate-x-[-150px]" />
       </div>
     </div>
   </div>

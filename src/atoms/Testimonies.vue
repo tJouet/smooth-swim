@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-row justify-end items-end">
-    <TestimonyBig class="translate-x-[320px]" />
+    <TestimonyBig class="translate-x-[360px]" />
     <TestimonySmall class="z-10" />
   </div>
 </template>
